@@ -1,0 +1,70 @@
+Bucles II. While y Do-WHILE
+1) Explicá con tus palabras qué es un ciclo WHILE. 
+2) ¿Cuál es la principal diferencia entre un ciclo FOR y un WHILE?
+3) Hacer un sistema en el que se ingresa si el usuario quiere salir del sistema. 
+Mientras diga que "SI" va a seguir preguntándomelo, en cuanto me escriba otro valor va a salir.
+4) Modificar el punto anterior para que, una vez que finalice, me muestre la cantidad de veces 
+que dijimos "SI", y luego mostrarlo por consola.
+5) Hacer un sumador. El sistema va a pedir un valor numérico por prompt y éste se irá acumulando. 
+El programa finalizará cuando se ingrese un 0 (cero). Una vez finalizada mostrá la suma.
+6) Modificá el programa anterior para que nos muestre el promedio de valores ingresados.
+7) Se ingresará por prompt un número que puede ser 1, 2 o 3. 
+Si se ingresó 1 mostrá 10 veces la palabra "Gato"
+Si se ingresó 2 mostrá 15 veces la palabra "Perro"
+Si se ingresó 3 mostrá 20 veces la palabra "Canario"
+Se podrá ingresar el 1, 2 o 3 tantas veces como quieran y la carga finalizará cuando sea 4.
+Si se ingresa un valor que no es 1 o 2 o 3 o 4 mostrá el cartel "Ingresá un número entre 1 y 4"
+Optimización: Si usaste 3 ciclos (uno por cada valor) para mostrar los console log, hace
+la corrección necesaria para tener un único ciclo.
+8) Existe un formulario en el que se debe ingresar un par de datos conocidos como clave-valor.
+El usuario ingresará dos valores, cuando se ingrese por prompt "la clave" podrá optar por
+"nombre" e ingresará el valor correspondiente. 
+También se podrá optar como clave "edad" y "dni" con sus correspondientes valores.
+Finalizá la carga con la clave "Fin". 
+En caso que se elija una clave diferente a las consideradas, entonces se mostrará un error.
+Si se elije mas de una vez una clave, el programa se quedará con el mas nuevo de los valores.
+Por ej, si ingresamos:
+"Nombre" "Sebastian"
+"edad" "9"
+"dni" "59576152"
+"edad" "21"
+"fin"
+
+Y se mostrará por consola
+"Nombre" "Sebastian"
+"edad" "21"
+"dni" "59576152"
+ 
+9) Crea un programa que pida el ingreso de facturas. Tendrá 3 facturas en total y, por cada una,
+ingresarás por prompt un nombre de factura. Una vez que las tengas comenzarás a ingresar montos.
+Cada monto estará unido a una factura,  por lo que deberás ingresar, nuevamente, el nombre de 
+la factura al que le pertenece el monto. Por ej:
+/*Fase de Carga inicial: */
+Factura 1: "Molinos",
+Factura 2: "YPF",
+Factura 3: "Aluar"
+
+/*Fase de carga de facturas:*/
+"Molinos" "10.000"
+"Molinos" "5.500"
+"YPF" "9.500"
+"Aluar" "3.000"
+"Molinos" "9.000"
+"YPF" "4.700"
+
+Sin importar si ingresó "Molinos" o "YPF" o "Aluar" e ingresás un 0 entonces se cortará la carga
+de factuas. Luego mostrarás la suma de montos agrupadas por cada una de las marcas
+/*Fase de muestra:*/
+"Molinos" "24.500"
+"YPF" "14.200"
+"Aluar" "3000"
+Consideración 1: si alguna de las empresas no carga datos, entonces se mostrará 
+"(Nombre de empresa)" "Sin facturar"
+
+Consideración 2: Al ingresar primero la empresa y luego el monto, considerá que la empresa debe
+existir. En caso que la empresa no exista debe mostrarse la leyenda 
+"Empresa inexistente, intente con otra". Luego VOLVERÁ A PEDIR LA EMPRESA no el monto.
+
+Consideración 3: Validá que el monto sea un número positivo. Si es negativo se mostrará la 
+leyenda "No se aceptan facturas con números negativos". Acto seguido se volverá a pedir el monto.
+ 
